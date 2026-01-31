@@ -3,38 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FlashingPoint87 - Home</title>
+    <title>FotoBox AI - AI-Powered Product Photography</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            line-height: 1.6;
+        :root {
+            --primary: #6366f1;
+            --primary-hover: #4f46e5;
+            --secondary: #1e293b;
+            --text: #334155;
+            --light: #f8fafc;
+            --white: #ffffff;
+            --accent: #f59e0b;
         }
-        h1 {
-            color: #333;
-        }
-        nav {
-            margin: 20px 0;
-        }
-        nav a {
-            margin-right: 15px;
-            text-decoration: none;
-            color: #0066cc;
-        }
-        nav a:hover {
-            text-decoration: underline;
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', -apple-system, sans-serif; }
+        body { background-color: var(--light); color: var(--text); line-height: 1.6; }
+        header { background: var(--white); padding: 1rem 5%; position: fixed; width: 100%; top: 0; z-index: 1000; box-shadow: 0 1px 3px rgba(0,0,0,0.1); display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5rem; font-weight: 800; color: var(--primary); display: flex; align-items: center; gap: 0.5rem; text-decoration: none; }
+        nav { display: flex; gap: 2rem; }
+        nav a { text-decoration: none; color: var(--text); font-weight: 500; transition: color 0.3s; }
+        nav a:hover { color: var(--primary); }
+        .hero { padding: 160px 5% 100px; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; background: radial-gradient(circle at top right, #eef2ff, transparent); }
+        .hero h1 { font-size: 3.5rem; line-height: 1.1; margin-bottom: 1.5rem; color: var(--secondary); }
+        .hero p { font-size: 1.25rem; margin-bottom: 2.5rem; color: #64748b; }
+        .cta-button { background: var(--primary); color: var(--white); padding: 1rem 2rem; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 1.1rem; transition: transform 0.2s, background 0.3s; display: inline-block; }
+        .cta-button:hover { background: var(--primary-hover); transform: translateY(-2px); }
+        .features { padding: 100px 5%; background: var(--white); }
+        .section-title { text-align: center; margin-bottom: 4rem; }
+        .section-title h2 { font-size: 2.5rem; color: var(--secondary); margin-bottom: 1rem; }
+        .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .feature-card { padding: 2.5rem; border-radius: 16px; background: var(--light); transition: transform 0.3s; border: 1px solid #e2e8f0; }
+        .feature-card:hover { transform: translateY(-5px); }
+        .feature-card h3 { margin: 1.5rem 0 1rem; color: var(--secondary); }
+        .pricing { padding: 100px 5%; }
+        .price-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto; }
+        .price-card { background: var(--white); padding: 3rem; border-radius: 20px; border: 1px solid #e2e8f0; text-align: center; }
+        .price-card.featured { border: 2px solid var(--primary); position: relative; }
+        .price-card .price { font-size: 3rem; font-weight: 800; margin: 1.5rem 0; color: var(--secondary); }
+        footer { background: var(--secondary); color: var(--white); padding: 80px 5% 40px; }
+        .footer-content { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 4rem; margin-bottom: 60px; }
+        .footer-links h4 { margin-bottom: 1.5rem; }
+        .footer-links a { color: #94a3b8; text-decoration: none; display: block; margin-bottom: 0.8rem; }
+        .footer-bottom { border-top: 1px solid #334155; padding-top: 40px; text-align: center; color: #94a3b8; }
+        @media (max-width: 768px) {
+            .hero { grid-template-columns: 1fr; text-align: center; }
+            .hero h1 { font-size: 2.5rem; }
+            nav { display: none; }
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to FlashingPoint87</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html">Terms of Service</a>
-    </nav>
-    <p>This is the home page for FlashingPoint87.</p>
+    <header>
+        <a href="index.html" class="logo">FotoBox AI</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#features">Features</a>
+            <a href="#pricing">Pricing</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="terms.html">Terms</a>
+        </nav>
+        <a href="#" class="cta-button" style="padding: 0.6rem 1.2rem; font-size: 0.9rem;">Download App</a>
+    </header>
+
+    <section class="hero">
+        <div>
+            <h1>Transform Product Photos with AI Magic</h1>
+            <p>FotoBox AI helps ecommerce sellers create studio-quality product images in seconds using Gemini 2.5 Flash. Remove backgrounds, generate lifestyle scenes, and boost sales.</p>
+            <div style="display: flex; gap: 1rem;">
+                <a href="#" class="cta-button">Get Started Free</a>
+                <div style="display: flex; align-items: center; gap: 0.5rem; color: #64748b; font-weight: 500;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" width="20" alt="Google">
+                    Sign in with Google or Apple
+                </div>
+            </div>
+        </div>
+        <div style="position: relative;">
+            <div style="background: var(--primary); width: 100%; height: 500px; border-radius: 24px; opacity: 0.1;"></div>
+            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
+                <span style="font-size: 5rem;">📸</span>
+                <p style="font-weight: bold; color: var(--primary);">AI Processing...</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="section-title">
+            <h2>Everything you need for Ecommerce</h2>
+            <p>Powered by Gemini 2.5 Flash for industry-leading image generation</p>
+        </div>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <span style="font-size: 2.5rem;">✨</span>
+                <h3>Background Removal</h3>
+                <p>Perfect cutouts in milliseconds. Meets Amazon, eBay, and Shopify requirements automatically.</p>
+            </div>
+            <div class="feature-card">
+                <span style="font-size: 2.5rem;">🏙️</span>
+                <h3>Lifestyle Scenes</h3>
+                <p>Place your product in beautiful, context-aware environments without a professional shoot.</p>
+            </div>
+            <div class="feature-card">
+                <span style="font-size: 2.5rem;">📱</span>
+                <h3>Instant Mockups</h3>
+                <p>Generate high-quality mockups for your digital and physical products instantly.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+        <div class="section-title">
+            <h2>Simple, Transparent Pricing</h2>
+        </div>
+        <div class="price-grid">
+            <div class="price-card">
+                <h3>Free</h3>
+                <div class="price">$0<span>/mo</span></div>
+                <ul style="list-style: none; margin-bottom: 2rem; color: #64748b;">
+                    <li>3 Edits per Month</li>
+                    <li>Watermarked Images</li>
+                    <li>Basic Support</li>
+                </ul>
+                <a href="#" class="cta-button" style="background: #e2e8f0; color: var(--secondary);">Current Plan</a>
+            </div>
+            <div class="price-card featured">
+                <div style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: var(--accent); color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: bold;">MOST POPULAR</div>
+                <h3>Pro</h3>
+                <div class="price">$19<span>/mo</span></div>
+                <ul style="list-style: none; margin-bottom: 2rem; color: #64748b;">
+                    <li>100 Edits per Month</li>
+                    <li>No Watermarks</li>
+                    <li>Priority AI Processing</li>
+                </ul>
+                <a href="#" class="cta-button">Go Pro</a>
+            </div>
+            <div class="price-card">
+                <h3>Unlimited</h3>
+                <div class="price">$49<span>/mo</span></div>
+                <ul style="list-style: none; margin-bottom: 2rem; color: #64748b;">
+                    <li>Unlimited AI Edits</li>
+                    <li>Commercial License</li>
+                    <li>24/7 VIP Support</li>
+                </ul>
+                <a href="#" class="cta-button">Go Unlimited</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <a href="index.html" class="logo" style="color: white; margin-bottom: 1.5rem;">FotoBox AI</a>
+                <p style="color: #94a3b8;">The ultimate AI product photography companion for ecommerce sellers worldwide.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Product</h4>
+                <a href="#features">Features</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#">Download</a>
+            </div>
+            <div class="footer-links">
+                <h4>Legal</h4>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 FotoBox AI. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
