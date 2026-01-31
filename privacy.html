@@ -3,44 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - FlashingPoint87</title>
+    <title>Privacy Policy - FotoBox AI</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            line-height: 1.6;
+        :root {
+            --primary: #6366f1;
+            --secondary: #1e293b;
+            --text: #334155;
+            --light: #f8fafc;
+            --white: #ffffff;
         }
-        h1 {
-            color: #333;
-        }
-        nav {
-            margin: 20px 0;
-        }
-        nav a {
-            margin-right: 15px;
-            text-decoration: none;
-            color: #0066cc;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', -apple-system, sans-serif; }
+        body { background-color: var(--light); color: var(--text); line-height: 1.6; }
+        header { background: var(--white); padding: 1rem 5%; position: fixed; width: 100%; top: 0; z-index: 1000; box-shadow: 0 1px 3px rgba(0,0,0,0.1); display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5rem; font-weight: 800; color: var(--primary); text-decoration: none; }
+        nav { display: flex; gap: 2rem; }
+        nav a { text-decoration: none; color: var(--text); font-weight: 500; }
+        .content-section { padding: 160px 5% 100px; max-width: 1000px; margin: 0 auto; }
+        h1 { font-size: 2.5rem; color: var(--secondary); margin-bottom: 2rem; }
+        h2 { font-size: 1.5rem; color: var(--secondary); margin: 2rem 0 1rem; }
+        p { margin-bottom: 1rem; color: #64748b; }
+        ul { margin-bottom: 1.5rem; padding-left: 1.5rem; color: #64748b; }
+        li { margin-bottom: 0.5rem; }
+        footer { background: var(--secondary); color: var(--white); padding: 40px 5%; text-align: center; margin-top: 100px; }
     </style>
 </head>
 <body>
-    <h1>Privacy Policy</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html">Terms of Service</a>
-    </nav>
-    <p>Last updated: January 31, 2026</p>
-    <h2>Information Collection</h2>
-    <p>This section describes what information we collect and how we use it.</p>
-    <h2>Data Usage</h2>
-    <p>We are committed to protecting your privacy and handling your data responsibly.</p>
-    <h2>Contact</h2>
-    <p>If you have any questions about this Privacy Policy, please contact us.</p>
+    <header>
+        <a href="index.html" class="logo">FotoBox AI</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="terms.html">Terms</a>
+        </nav>
+    </header>
+
+    <div class="content-section">
+        <h1>Privacy Policy</h1>
+        <p>Last updated: January 31, 2026</p>
+        
+        <p>At FotoBox AI, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our mobile application and services.</p>
+
+        <h2>1. Information We Collect</h2>
+        <p>We collect information to provide better services to our users:</p>
+        <ul>
+            <li><strong>OAuth Data:</strong> When you sign in with Google or Apple, we collect your name, email address, and unique identifier provided by the authentication service.</li>
+            <li><strong>User Content:</strong> We process the photos you upload to remove backgrounds, create lifestyle scenes, or generate mockups.</li>
+            <li><strong>Usage Data:</strong> We collect information about how you interact with our app, including features used and subscription status.</li>
+        </ul>
+
+        <h2>2. How We Use Your Information</h2>
+        <p>Your data is used to:</p>
+        <ul>
+            <li>Provide and maintain the FotoBox AI service.</li>
+            <li>Process your photos using Gemini 2.5 Flash AI technology.</li>
+            <li>Manage your account and subscriptions.</li>
+            <li>Send important updates and technical notices.</li>
+        </ul>
+
+        <h2>3. Data Storage and Processing</h2>
+        <p>Photos are processed securely. We do not use your personal photos to train our AI models. Uploaded images are stored temporarily to facilitate the editing process and are deleted according to our data retention policy.</p>
+
+        <h2>4. Your Rights</h2>
+        <p>You have the right to access, correct, or delete your personal data. You can manage your account settings within the app or contact us for assistance.</p>
+
+        <h2>5. Compliance</h2>
+        <p>We comply with applicable data protection laws and strive to maintain industry-standard security measures to protect your information.</p>
+
+        <h2>6. Contact Us</h2>
+        <p>If you have questions about this policy, please contact us at privacy@fotoboxai.com.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 FotoBox AI. All rights reserved.</p>
+    </footer>
 </body>
 </html>
