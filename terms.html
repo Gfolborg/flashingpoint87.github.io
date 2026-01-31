@@ -3,44 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms of Service - FlashingPoint87</title>
+    <title>Terms of Service - FotoBox AI</title>
     <style>
+        :root {
+            --primary: #6366f1;
+            --primary-dark: #4f46e5;
+            --bg: #0f172a;
+            --card-bg: #1e293b;
+            --text: #f8fafc;
+            --text-muted: #94a3b8;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
             line-height: 1.6;
         }
-        h1 {
-            color: #333;
-        }
         nav {
-            margin: 20px 0;
+            padding: 1.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
         }
-        nav a {
-            margin-right: 15px;
-            text-decoration: none;
-            color: #0066cc;
-        }
-        nav a:hover {
-            text-decoration: underline;
+        .logo { font-size: 1.5rem; font-weight: 700; color: var(--primary); text-decoration: none; }
+        .nav-links a { color: var(--text-muted); text-decoration: none; margin-left: 2rem; transition: color 0.3s; }
+        .nav-links a:hover { color: var(--text); }
+        .container { max-width: 800px; margin: 4rem auto; padding: 0 2rem; }
+        h1 { font-size: 2.5rem; margin-bottom: 2rem; }
+        h2 { font-size: 1.5rem; margin: 2rem 0 1rem; color: var(--primary); }
+        p { margin-bottom: 1rem; color: var(--text-muted); }
+        footer {
+            margin-top: 4rem;
+            padding: 2rem;
+            text-align: center;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: var(--text-muted);
         }
     </style>
 </head>
 <body>
-    <h1>Terms of Service</h1>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html">Terms of Service</a>
+        <a href="index.html" class="logo">FotoBox AI</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="terms.html">Terms</a>
+        </div>
     </nav>
-    <p>Last updated: January 31, 2026</p>
-    <h2>Acceptance of Terms</h2>
-    <p>By accessing and using this service, you accept and agree to be bound by the terms and provision of this agreement.</p>
-    <h2>Use License</h2>
-    <p>Permission is granted to temporarily use the materials on this website for personal, non-commercial use only.</p>
-    <h2>Disclaimer</h2>
-    <p>The materials on this website are provided on an 'as is' basis without any warranties.</p>
+    <div class="container">
+        <h1>Terms of Service</h1>
+        <p>Last updated: June 2024</p>
+        
+        <h2>1. Acceptance of Terms</h2>
+        <p>By downloading or using FotoBox AI, you agree to be bound by these Terms of Service. If you do not agree, please do not use the application.</p>
+        
+        <h2>2. Description of Service</h2>
+        <p>FotoBox AI provides AI-powered photo enhancement and background removal tools specifically designed for marketplace sellers to improve product visibility and sales.</p>
+        
+        <h2>3. User Content</h2>
+        <p>You retain all ownership rights to the photos you upload. By using the service, you grant FotoBox AI a limited license to process your images for the sole purpose of providing the enhancement services.</p>
+        
+        <h2>4. Prohibited Conduct</h2>
+        <p>Users agree not to use the service for any illegal purposes, including but not limited to processing copyrighted material without authorization or generating deceptive content.</p>
+        
+        <h2>5. Limitation of Liability</h2>
+        <p>FotoBox AI is provided "as is" without warranties of any kind. We are not liable for any damages arising from your use of the application.</p>
+        
+        <h2>6. Changes to Terms</h2>
+        <p>We reserve the right to modify these terms at any time. Continued use of the app constitutes acceptance of the new terms.</p>
+    </div>
+    <footer>
+        <p>&copy; 2024 FotoBox AI. All rights reserved.</p>
+    </footer>
 </body>
 </html>
